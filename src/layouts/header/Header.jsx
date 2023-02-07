@@ -3,7 +3,7 @@ import logo from '../../assets/images/logo.svg'
 import Loginbtn from '../../components/buttons/Loginbtn'
 import SignUpbtn from '../../components/buttons/SignUpbtn'
 import { useState } from 'react'
-import {Menu, Cancel} from '@mui/icons-material';
+import {Menu, Cancel, Liquor} from '@mui/icons-material';
 
 
 
@@ -21,7 +21,7 @@ export default function Header() {
         <header className='container box-border py-5 px-5'>
         <menu className='flex space-x-10 items-center justify-between'>
                 <picture className='flex items-center'>
-                    <img className='w-10' src={logo} alt="" />
+                    <Liquor className='text-white'/>
                     <p className='text-white'>Wine store</p>
                 </picture> 
                 <picture className='logo'>
