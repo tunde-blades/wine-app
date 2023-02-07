@@ -24,14 +24,20 @@ h4{
     color: black;
 }
 .headcontent{
-    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 70%;
+    width: 80%;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+.headcontent h1{
+     font-size: 40px;
 }
 .section1{
     position:relative;

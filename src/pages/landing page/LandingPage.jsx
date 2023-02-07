@@ -47,8 +47,9 @@ export default function LandingPage() {
     <div className='sections'>
       <Header/>
       <section className='section1 flex justify-between py-3 max-h-screen'>
-          <div className=''>
-            <h1 className='text-white headcontent'>Celebrating Love and Life</h1>
+          <div className='headcontent'>
+            <h1 className='text-white'>Celebrating Love and Life</h1>
+            <p className='text-white'>with wine made from the finest ingredients</p>
 
           </div>
           <picture className='min-w-lg bgimage'>
@@ -165,9 +166,9 @@ export default function LandingPage() {
               </div>
         </div>
       </section> 
-      <div>
+      <div className='video'>
         <video src={winevid
-        }></video>
+        } autoplay></video>
       </div>
       <p className='p-2'>You might also like</p>
       <section className='flex overflow-scroll topbooks'>
