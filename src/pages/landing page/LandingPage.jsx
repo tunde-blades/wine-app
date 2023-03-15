@@ -1,7 +1,7 @@
 // import React, {useEffect, useState} from 'react'
-import Header from '../../layouts/header/Header'
 // import { Search} from '@mui/icons-material';
 
+import Header from '../../layouts/header/Header'
 import winevid from '../../assets/images/wine (1).mp4'
 import wine1 from '../../assets/images/wine (1).jpeg'
 import wine2 from '../../assets/images/wine (2).jpeg'
@@ -37,7 +37,8 @@ import wine31 from '../../assets/images/wine (31).jpeg'
 
 
 import winebg from '../../assets/images/winebg (1).jpeg'
-
+import {Carousel} from 'react-responsive-carousel'       
+import Footer from '../../layouts/footer/Footer'
 
 export default function LandingPage() {
 
@@ -46,82 +47,202 @@ export default function LandingPage() {
   return (
     <div className='sections'>
       <Header/>
-      <section className='section1 flex justify-between py-3 max-h-screen'>
-          <div className='headcontent'>
-            <h1 className='text-white'>Celebrating Love and Life</h1>
-            <p className='text-white'>with wine made from the finest ingredients</p>
+      {/* <Carousel>
+                <div>
+                    <img src={wine1} />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={wine2} />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src={wine3} />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <img src={wine4} />
+                    <p className="legend">Legend 4</p>
+                </div>
+            </Carousel> */}
 
-          </div>
-          <picture className='min-w-lg bgimage'>
-            
-          </picture>
-      </section>
-      <h1 className='font-bold px-3'>Recently Ordered</h1>
-      <section className='overflow-hidden topbooks'>
-          <div className='flex w-max flex-row p-2 gap-0'>
-              <div className='box flex flex-row  items-center  justify-between bg-red-900 p-2 rounded shadow-md' >
+      <h1 className='font-bold p-3 space'>Recently Ordered</h1>
+      <section className='space overflow-hidden gap-2  flex flex-wrap'>
+          <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
-                <div className='p-2 content'>
-                  <h3 className='font-normal text-white'>Watermel wine </h3>
+                <div className='content'>
+                  <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <small className='text-white'>Watermelon wine mixed with fine ingredients to nourish the skin and keep you hydrated, take it on the go, in the office, or at home.</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
-                    
+                  <div className='flex flex-row gap-2 items-center content-center'>
+                    <button className='accessbtn '>Description</button>
+                    <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
-        <div className='flex flex-row flex-wrap min-w-max p-2 gap-2'>
-              <div className='box flex flex-row  items-center  justify-between bg-red-900 p-2 rounded shadow-md' >
+        <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
-                <div className='p-2 content'>
-                  <h3 className='font-normal text-white'>Fruit wine </h3>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <small className='text-white'>Watermelon wine mixed with fine ingredients to nourish the skin and keep you hydrated, take it on the go, in the office, or at home.</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
-                    
+                  <div className='flex flex-row gap-2 items-center content-end'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
-        <div className='flex flex-row flex-wrap min-w-max p-2 gap-2'>
-              <div className='box flex flex-row  items-center  justify-between bg-red-900 p-2 rounded shadow-md' >
+         <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
-                <div className='p-2 content'>
-                  <h3 className='font-normal text-white'>Fruit wine </h3>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <small className='text-white'>Watermelon wine mixed with fine ingredients to nourish the skin and keep you hydrated, take it on the go, in the office, or at home.</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
+                  <div className='flex flex-row gap-2 items-center '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
-        <div className='flex flex-row flex-wrap min-w-max p-2 gap-2'>
-              <div className='box flex flex-row  items-center  justify-between bg-red-900 p-2 rounded shadow-md' >
-                <picture ><img className='' src={wine4} alt="" /></picture>
-                <div className='p-2 content'>
-                  <h3 className='font-normal text-white'>Fruit wine </h3>
+         <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine7} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                 <small className='text-white'>Watermelon wine mixed with fine ingredients to nourish the skin and keep you hydrated, take it on the go, in the office, or at home.</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+       <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine10} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine3} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-2 text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center content-center'>
+                    <button className='accessbtn '>Description</button>
+                    <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine2} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center content-end'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+         <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine5} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+         <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine7} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+       <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine10} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine3} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex w-max flex-row p-2'>
+              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine7} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>            
       </section>
-      <h1 className='font-bold px-3'>Newly Added</h1>
-      <section className='flex overflow-scroll projects'>
+
+    <section className='my-10'>
+       <div className='flex justify-between px-3'>
+        <h1 className='font-bold px-3'>Family Size</h1>
+         <a href='/family'>see more</a>
+     </div>
+      <section className=' scroll flex overflow-scroll projects'>
         <div className='flex flex-row min-w-max p-2 gap-2'>
               <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
-                  <span className='price'>$150</span>  <button className='accessbtn'>Order Now</button>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
                 </div>
               </div>
         </div>
@@ -131,7 +252,11 @@ export default function LandingPage() {
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
-                  <span className='price'>$150</span>  <button className='accessbtn'>Order Now</button>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
                 </div>
               </div>
         </div>
@@ -141,7 +266,11 @@ export default function LandingPage() {
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
-                  <span className='price'>$150</span>  <button className='accessbtn'>Order Now</button>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
                 </div>
               </div>
         </div>
@@ -151,7 +280,11 @@ export default function LandingPage() {
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
-                  <span className='price'>$150</span>  <button className='accessbtn'>Order Now</button>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
                 </div>
               </div>
         </div>
@@ -161,17 +294,259 @@ export default function LandingPage() {
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
-                  <span className='price'>$150</span>  <button className='accessbtn'>Order Now</button>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
                 </div>
               </div>
         </div>
       </section> 
-      <div className='video'>
-        <video src={winevid
-        } autoplay></video>
-      </div>
+    </section>
+
+
+      <section className='my-10'>
+         <div className='flex justify-between px-3'>
+        <h1 className='font-bold px-3'>Wholesale</h1>
+         <a href='/wholesale'>see more</a>
+     </div>
+      <section className='scroll flex overflow-scroll projects'>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+      </section> 
+      </section>
+
+
+       <section className='my-10'>
+        <div className='flex justify-between px-3'>
+        <h1 className='font-bold px-3'>Brands</h1>
+         <a href='/brands'>see more</a>
+     </div>
+      <section className='scroll flex overflow-scroll projects'>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+      </section> 
+       </section>
+
+
+      <section className='my-10'>
+         <div className='flex justify-between px-3'>
+        <h1 className='font-bold px-3'>Products</h1>
+         <a href='/products'>see more</a>
+     </div>
+      <section className='scroll flex overflow-scroll projects'>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span>  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-row min-w-max p-2 gap-2'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+                <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
+                <h4 className='font-normal'>Pine wine</h4>
+                <small className='text-gray-400'>Pine grinded with pepper</small>
+                <div className='flex flex-col gap-2 items-start'>
+                  <span className='price'>$150</span> 
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+      </section> 
+      </section>
+
       <p className='p-2'>You might also like</p>
-      <section className='flex overflow-scroll topbooks'>
+      <section className='flex overflow-scroll'>
             <div className='flex flex-row flex-wrap min-w-max p-2 gap-2'>
               <div className='flex flex-row w-90 items-center  justify-between bg-red-900 p-2 rounded shadow-md' >
                 <picture ><img className='w-20' src={wine20} alt="" /></picture>
@@ -179,8 +554,9 @@ export default function LandingPage() {
                   <h3 className='font-normal text-white'>Fruit wine </h3>
                   <span className='price'>$150</span> <br/>
                   <small className='text-gray-300'>red blended with apple</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
@@ -192,8 +568,9 @@ export default function LandingPage() {
                   <h3 className='font-normal text-white'>Fruit wine </h3>
                   <span className='price'>$150</span> <br/>
                   <small className='text-gray-300'>red blended with apple</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
@@ -205,9 +582,9 @@ export default function LandingPage() {
                   <h3 className='font-normal text-white'>Fruit wine </h3>
                   <span className='price'>$150</span> <br />
                   <small className='text-gray-300'>red blended with apple</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
-                  
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
@@ -219,8 +596,9 @@ export default function LandingPage() {
                   <h3 className='font-normal text-white'>Fruit wine </h3>
                   <span className='price'>$150</span> <br />
                   <small className='text-gray-300'>red blended with apple</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
+                 <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
@@ -232,13 +610,15 @@ export default function LandingPage() {
                   <h3 className='font-normal text-white'>Fruit wine </h3>
                   <span className='price'>$150</span> <br />
                   <small className='text-gray-300'>red blended with apple</small>
-                  <div className='flex flex-col gap-2 items-center'>
-                    <button className='accessbtn '>Order Now</button>
+                  <div className='flex flex-row gap-2 items-center'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
             </div>
       </section>
+      <Footer/>
     </div>
   )
 }

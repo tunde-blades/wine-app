@@ -1,9 +1,6 @@
 import React from 'react'
-import logo from '../../assets/images/logo.svg'
-import Loginbtn from '../../components/buttons/Loginbtn'
-import SignUpbtn from '../../components/buttons/SignUpbtn'
 import { useState } from 'react'
-import {Menu, Cancel, Liquor} from '@mui/icons-material';
+import {Liquor,  PeopleAltOutlined, LocalDrinkOutlined, NewReleasesOutlined, SellOutlined, ShoppingBasketOutlined} from '@mui/icons-material';
 
 
 
@@ -17,28 +14,44 @@ export default function Header() {
 
 
   return (
-    <section className=' flex header justify-center overflow-hidden'>
+    <section className='space flex header justify-center overflow-hidden'>
         <header className='container box-border py-5 px-5'>
         <menu className='flex space-x-10 items-center justify-between'>
-                <picture className='flex items-center'>
-                    <Liquor className='text-white'/>
-                    <p className='text-white'>Wine store</p>
-                </picture> 
-                <picture className='logo'>
-                    <span onClick={displayNav}>{openNav ? <Cancel className='text-white'/>:<Menu className='text-white'/>}</span>
-                </picture>
-                <nav className='flex  text-white navs'>
-                    <li className='cursor-pointer'>Catalog</li>
-                    <li className='cursor-pointer'>Contact us</li>
-                </nav>
-                {
-                    openNav && <nav className='text-white navsmobile'>
-                    <li className='cursor-pointer'>Catalog</li>
-                    <li className='cursor-pointer'>Contact us</li>
-                </nav>
-                }
+                <a href='/' className='winb flex items-center'>
+                    <Liquor className=''/>
+                    <p className='text-black'>Wine store</p>
+                </a> 
+                <a href="/cart">
+                    <ShoppingBasketOutlined/>
+                </a>
             </menu>
+             <section className='navbtn flex justify-between py-3 max-h-screen gap-2 text-orange-800'>
+                <a href='/family' className='flex-1 border p-1 rounded-md flex flex-col gap-1 items-center justify-center text-xs'>
+                    < PeopleAltOutlined/>
+                    <p>Family</p>
+                </a>
+                <a href='/brands' className='flex-1 border p-1 rounded-md flex flex-col  gap-1 items-center justify-center text-xs'>
+                    <LocalDrinkOutlined className=''/>
+                    <p>Brands</p>
+                </a>
+                <a href='/wholesale' className='flex-1 border p-1 rounded-md flex flex-col  gap-1 items-center justify-center text-xs'>
+                    <SellOutlined className=''/>
+                    <p>Wholesale</p>
+                </a>
+                <a href='products' className=' flex-1 border p-1 rounded-md flex flex-col  gap-1 items-center justify-center text-xs'>
+                    <NewReleasesOutlined className='text-xs'/>
+                    <p className='text-xs'>Products</p>
+                </a>
+      </section>
         </header>
+        <section>
+            <form action="">
+                <label htmlFor="searchbox" className=''>
+                    <input type="text" />
+                </label>
+            </form>
+        </section>
+        
     </section>
   )
 }
