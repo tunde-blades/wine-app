@@ -69,12 +69,12 @@ export default function LandingPage() {
       <h1 className='font-bold p-3 space'>Recently Ordered</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
           <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col   justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center content-center'>
+                  <div className='flex flex-row gap-2'>
                     <button className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
@@ -82,12 +82,12 @@ export default function LandingPage() {
               </div>
         </div>
         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center content-end'>
+                  <div className='flex flex-row gap-2  content-end'>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -95,12 +95,12 @@ export default function LandingPage() {
               </div>
         </div>
          <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center '>
+                  <div className='flex flex-row gap-2  '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -108,12 +108,12 @@ export default function LandingPage() {
               </div>
         </div>
          <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center'>
+                  <div className='flex flex-row gap-2 '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -121,12 +121,12 @@ export default function LandingPage() {
               </div>
         </div>
        <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center'>
+                  <div className='flex flex-row gap-2 '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -134,12 +134,12 @@ export default function LandingPage() {
               </div>
         </div>
         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center content-center'>
+                  <div className='flex flex-row gap-2  content-center'>
                     <button className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
@@ -147,12 +147,12 @@ export default function LandingPage() {
               </div>
         </div>
         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center content-end'>
+                  <div className='flex flex-row gap-2  content-end'>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -160,12 +160,12 @@ export default function LandingPage() {
               </div>
         </div>
          <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center '>
+                  <div className='flex flex-row gap-2  '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -173,12 +173,12 @@ export default function LandingPage() {
               </div>
         </div>
          <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center'>
+                  <div className='flex flex-row gap-2 '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -186,12 +186,12 @@ export default function LandingPage() {
               </div>
         </div>
        <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center'>
+                  <div className='flex flex-row gap-2 '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -199,12 +199,12 @@ export default function LandingPage() {
               </div>
         </div>
         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center'>
+                  <div className='flex flex-row gap-2 '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
@@ -212,12 +212,12 @@ export default function LandingPage() {
               </div>
         </div>
         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col  items-center  justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 items-center'>
+                  <div className='flex flex-row gap-2 '>
                     <button className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
