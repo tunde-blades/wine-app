@@ -38,10 +38,10 @@ function Family() {
      <div>
       <Header/>
       <section className='space'>
-        <section>
-          <h3> Couples</h3>
+          <section className='my-20'>
+          <h2 className='bg-blue-300 p-2 my-2'> Couples </h2>
          <section className='overflow-hidden justify-start gap-5  flex flex-wrap topbooks'>
-          <div className='flex w-max flex-row p-2'>
+          <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
@@ -54,7 +54,7 @@ function Family() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
@@ -67,7 +67,7 @@ function Family() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
@@ -80,7 +80,7 @@ function Family() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
@@ -93,7 +93,7 @@ function Family() {
                 </div>
               </div>
         </div>
-       <div className='flex w-max flex-row p-2'>
+       <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
@@ -106,7 +106,7 @@ function Family() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
@@ -119,7 +119,7 @@ function Family() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
@@ -132,7 +132,20 @@ function Family() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine10} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+         <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
@@ -145,7 +158,7 @@ function Family() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
@@ -158,7 +171,20 @@ function Family() {
                 </div>
               </div>
         </div>
-       <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine5} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2  '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+       <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
@@ -173,10 +199,10 @@ function Family() {
         </div>            
       </section>
         </section>
-         <section>
-          <h3> Extended</h3>
+           <section className='my-20'>
+          <h2 className='bg-red-500 p-2 my-2'> Extended </h2>
           <section className='overflow-hidden justify-start gap-5  flex flex-wrap topbooks'>
-          <div className='flex w-max flex-row p-2'>
+          <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
@@ -189,7 +215,7 @@ function Family() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
@@ -202,33 +228,7 @@ function Family() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
-                <picture ><img className='' src={wine5} alt="" /></picture>
-                <div className='content'>
-                  <h3 className='text-black'>Fruit wine </h3>
-                  <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
-                     <button className='addbtn'> + </button>
-                </div>
-                </div>
-              </div>
-        </div>
-         <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
-                <picture ><img className='' src={wine7} alt="" /></picture>
-                <div className='content'>
-                  <h3 className='text-black'>Fruit wine </h3>
-                  <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
-                     <button className='addbtn'> + </button>
-                </div>
-                </div>
-              </div>
-        </div>
-       <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
@@ -241,33 +241,7 @@ function Family() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
-                <picture ><img className='' src={wine3} alt="" /></picture>
-                <div className='content'>
-                  <h3 className='text-2 text-black'>Fruit wine </h3>
-                  <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2  content-center'>
-                    <button className='accessbtn '>Description</button>
-                    <button className='addbtn'> + </button>
-                </div>
-                </div>
-              </div>
-        </div>
-        <div className='flex w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
-                <picture ><img className='' src={wine2} alt="" /></picture>
-                <div className='content'>
-                  <h3 className='text-black'>Fruit wine </h3>
-                  <span className='price'>$150</span>
-                  <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
-                     <button className='addbtn'> + </button>
-                </div>
-                </div>
-              </div>
-        </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
@@ -280,7 +254,7 @@ function Family() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
@@ -293,7 +267,85 @@ function Family() {
                 </div>
               </div>
         </div>
-       <div className='flex w-max flex-row p-2'>
+       <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine10} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine3} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-2 text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2  content-center'>
+                    <button className='accessbtn '>Description</button>
+                    <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine2} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2  content-end'>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+         <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine5} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2  '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+         <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine7} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2 '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+        <div className='flex flex-1 w-max flex-row p-2'>
+              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+                <picture ><img className='' src={wine5} alt="" /></picture>
+                <div className='content'>
+                  <h3 className='text-black'>Fruit wine </h3>
+                  <span className='price'>$150</span>
+                  <div className='flex flex-row gap-2  '>
+                    <button className='accessbtn '>Description</button>
+                     <button className='addbtn'> + </button>
+                </div>
+                </div>
+              </div>
+        </div>
+       <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>

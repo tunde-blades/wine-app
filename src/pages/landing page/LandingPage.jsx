@@ -68,7 +68,7 @@ export default function LandingPage() {
 
       <h1 className='font-bold p-3 space'>Recently Ordered</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
-          <div className='flex w-max flex-row p-2'>
+          <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col   justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
@@ -81,7 +81,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
@@ -94,7 +94,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
@@ -107,7 +107,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex  flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
@@ -120,7 +120,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-       <div className='flex w-max flex-row p-2'>
+       <div className='flex  flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
@@ -133,7 +133,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
@@ -146,7 +146,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex  flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
@@ -159,7 +159,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex  flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
@@ -172,7 +172,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-         <div className='flex w-max flex-row p-2'>
+         <div className='flex flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
@@ -185,7 +185,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-       <div className='flex w-max flex-row p-2'>
+       <div className='flex flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
@@ -198,7 +198,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
@@ -211,7 +211,7 @@ export default function LandingPage() {
                 </div>
               </div>
         </div>
-        <div className='flex w-max flex-row p-2'>
+        <div className='flex  flex-1  w-max flex-row p-2'>
               <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
