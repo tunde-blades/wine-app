@@ -1,20 +1,33 @@
-import { DeleteForeverOutlined, DeleteOutline } from '@mui/icons-material'
-import React from 'react'
+import { Cancel , DeleteOutline } from '@mui/icons-material'
+import React, {useEffect, useState} from 'react'
 import image1 from '../../assets/images/wine (1).jpeg'
+import Checkout from '../../components/modals/Checkout'
 import Footer from '../../layouts/footer/Footer'
 import Header from '../../layouts/header/Header'
 
 export default function Cart() {
+
+     let [openOrder, setopenorder] = useState(false)
+
+    let displayOrder = ()=>{
+         setopenorder(!openOrder)
+    }
+
+
   return (
     <div>
         <Header/>
-        <section className='space'>
-          <div className='flex justify-between border p-2'>
+        {openOrder && <Checkout/>}
+        {openOrder && <div onClick={displayOrder} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
+                <Cancel/>
+            </div>}
+        <section className='space flex flex-col'>
+          <div className='flex justify-between border p-2 rounded-md'>
             <h3>Total</h3>
             <p>$ 320.00</p>
           </div>
-         <section className='my-4 p-2 bg-gray-100'>
-           <div className='flex  justify-around'>
+         <section className='my-4 p-2 bg-gray-100 rounded-md'>
+           <div className='flex  justify-around gap-4'>
             <picture className='flex flex-1'><img className='' src={image1} alt="" /> </picture>
             <div className='flex flex-1 flex-col leading-8'>
               <div className='flex justify-end text-red-600'>
@@ -26,7 +39,7 @@ export default function Cart() {
             </div>
           </div>
          </section>
-            <button className='flex border p-2 justify-center bg-orange-800 text-white'>Check out</button>
+            <button onClick={displayOrder} className='flex-1 border p-2 justify-center bg-orange-800 text-white cursor-pointer rounded-md'>Check out</button>
         </section>
         <Footer/>
     </div>

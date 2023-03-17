@@ -1,4 +1,5 @@
 import React from 'react'
+import  {useEffect, useState} from 'react'
 import Header from '../../layouts/header/Header'
 import wine1 from '../../assets/images/wine (1).jpeg'
 import wine2 from '../../assets/images/wine (2).jpeg'
@@ -32,12 +33,28 @@ import wine29 from '../../assets/images/wine (29).jpeg'
 import wine30 from '../../assets/images/wine (30).jpeg'
 import wine31 from '../../assets/images/wine (31).jpeg'
 import Footer from '../../layouts/footer/Footer'
+import Description from '../../components/modals/Description'
+
+import { Cancel } from '@mui/icons-material'
 
 
 export default function Wholesale() {
+
+      let [openDesc, setopendesc] = useState(false)
+
+    let displayDesc = ()=>{
+         setopendesc(!openDesc)
+    }
+
+
+
   return (
     <div>
       <Header/>
+       {openDesc && <Description/>}
+      {openDesc && <div onClick={displayDesc} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
+                <Cancel/>
+            </div>}
       <section className='space'>
         <section className='my-20'>
           <h2 className='bg-orange-500 p-2 my-2'>20 - 99 </h2>
@@ -49,7 +66,7 @@ export default function Wholesale() {
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -62,7 +79,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -75,7 +92,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -88,7 +105,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -101,7 +118,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -114,7 +131,7 @@ export default function Wholesale() {
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -127,7 +144,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -140,7 +157,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -153,7 +170,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -166,7 +183,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -179,7 +196,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -192,7 +209,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -210,7 +227,7 @@ export default function Wholesale() {
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -223,7 +240,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -236,7 +253,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -249,7 +266,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -262,7 +279,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -275,7 +292,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -288,7 +305,7 @@ export default function Wholesale() {
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -301,7 +318,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -314,7 +331,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -327,7 +344,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -340,7 +357,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -353,7 +370,7 @@ export default function Wholesale() {
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>

@@ -1,4 +1,4 @@
-// import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 // import { Search} from '@mui/icons-material';
 
 import Header from '../../layouts/header/Header'
@@ -39,14 +39,24 @@ import wine31 from '../../assets/images/wine (31).jpeg'
 import winebg from '../../assets/images/winebg (1).jpeg'
 import {Carousel} from 'react-responsive-carousel'       
 import Footer from '../../layouts/footer/Footer'
+import Description from '../../components/modals/Description'
+import { Star, StarBorderOutlined, Cancel } from '@mui/icons-material'
 
 export default function LandingPage() {
 
+     let [openDesc, setopendesc] = useState(false)
 
+    let displayDesc = ()=>{
+         setopendesc(!openDesc)
+    }
 
   return (
-    <div className='sections'>
+    <div className='bg-white'>
       <Header/>
+      {openDesc && <Description/>}
+      {openDesc && <div onClick={displayDesc} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
+                <Cancel/>
+            </div>}
       {/* <Carousel>
                 <div>
                     <img src={wine1} />
@@ -69,156 +79,156 @@ export default function LandingPage() {
       <h1 className='font-bold p-3 space'>Recently Ordered</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
           <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col   justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col   justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
          <div className='flex flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
          <div className='flex  flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
        <div className='flex  flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                     <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex  flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  content-end'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
          <div className='flex  flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2  '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
          <div className='flex flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
        <div className='flex flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex  flex-1  w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-100 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
                   <span className='price'>$150</span>
                   <div className='flex flex-row gap-2 '>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -233,70 +243,70 @@ export default function LandingPage() {
      </div>
       <section className=' scroll flex overflow-scroll projects'>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -313,70 +323,70 @@ export default function LandingPage() {
      </div>
       <section className='scroll flex overflow-scroll projects'>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -393,70 +403,70 @@ export default function LandingPage() {
      </div>
       <section className='scroll flex overflow-scroll projects'>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -473,70 +483,70 @@ export default function LandingPage() {
      </div>
       <section className='scroll flex overflow-scroll projects'>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine28} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine1} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span>  
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
               </div>
         </div>
         <div className='flex flex-row min-w-max p-2 gap-2'>
-              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-gray-100 p-2 rounded shadow-md'>
+              <div className='flex flex-col w-40 overflow-hidden items-start justify-between bg-white p-2 rounded shadow-md'>
                 <picture><img className='max-w-14 flex-1' src={wine24} alt="" /></picture>
                 <h4 className='font-normal'>Pine wine</h4>
                 <small className='text-gray-400'>Pine grinded with pepper</small>
                 <div className='flex flex-col gap-2 items-start'>
                   <span className='price'>$150</span> 
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -546,7 +556,7 @@ export default function LandingPage() {
       </section>
 
       <p className='p-2'>You might also like</p>
-      <section className='flex overflow-scroll'>
+      <section className='scroll flex overflow-scroll'>
             <div className='flex flex-row flex-wrap min-w-max p-2 gap-2'>
               <div className='flex flex-row w-90 items-center  justify-between bg-red-900 p-2 rounded shadow-md' >
                 <picture ><img className='w-20' src={wine20} alt="" /></picture>
@@ -555,7 +565,7 @@ export default function LandingPage() {
                   <span className='price'>$150</span> <br/>
                   <small className='text-gray-300'>red blended with apple</small>
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -569,7 +579,7 @@ export default function LandingPage() {
                   <span className='price'>$150</span> <br/>
                   <small className='text-gray-300'>red blended with apple</small>
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -583,7 +593,7 @@ export default function LandingPage() {
                   <span className='price'>$150</span> <br />
                   <small className='text-gray-300'>red blended with apple</small>
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -597,7 +607,7 @@ export default function LandingPage() {
                   <span className='price'>$150</span> <br />
                   <small className='text-gray-300'>red blended with apple</small>
                  <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>
@@ -611,7 +621,7 @@ export default function LandingPage() {
                   <span className='price'>$150</span> <br />
                   <small className='text-gray-300'>red blended with apple</small>
                   <div className='flex flex-row gap-2 items-center'>
-                    <button className='accessbtn '>Description</button>
+                    <button onClick={displayDesc} className='accessbtn '>Description</button>
                      <button className='addbtn'> + </button>
                 </div>
                 </div>

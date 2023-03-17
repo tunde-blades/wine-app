@@ -6,15 +6,8 @@ import {Liquor,  PeopleAltOutlined, LocalDrinkOutlined, NewReleasesOutlined, Sel
 
 export default function Header() {
 
-    let [openNav, setopennav] = useState(false)
-
-    let displayNav = ()=>{
-         setopennav(!openNav)
-    }
-
-
   return (
-    <section className='space flex header justify-center overflow-hidden'>
+    <section className=' space flex header justify-center overflow-hidden '>
         <header className='container box-border py-5 px-5'>
         <menu className='flex space-x-10 items-center justify-between'>
                 <a href='/' className='winb flex items-center'>

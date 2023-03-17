@@ -110,6 +110,12 @@ h4{
 .footer{
     margin-top: 50px;
 }
+.star{
+    font-size:.1px;
+}
+.modal{
+    backdrop-filter: blur(.5em);
+}
 
 @media (min-width:380px) and ( max-width:440px){
     .box{
