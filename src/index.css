@@ -8,6 +8,9 @@
 .winb{
     color:orangered;
 }
+.cartnum{
+    padding:1px 2px;
+}
 .navbtn a:hover{
     padding:0 10px;
     transition: all .2s ease-in-out;

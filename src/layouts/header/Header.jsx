@@ -15,7 +15,7 @@ export default function Header() {
                     <p className='text-black'>Wine store</p>
                 </a> 
                 <a href="/cart" className='relative'>
-                    <small className='bg-orange-500 rounded-xl px-1 text-white absolute right-0 top-0'>2</small>
+                    <small className='cartnum bg-orange-500 rounded-xl text-white text-xs absolute right-0 top-0'>2</small>
                     <ShoppingBasketOutlined/>
                 </a>
             </menu>
