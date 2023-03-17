@@ -14,7 +14,8 @@ export default function Header() {
                     <Liquor className=''/>
                     <p className='text-black'>Wine store</p>
                 </a> 
-                <a href="/cart">
+                <a href="/cart" className='relative'>
+                    <small className='bg-orange-500 rounded-xl px-1 text-white absolute right-0 top-0'>2</small>
                     <ShoppingBasketOutlined/>
                 </a>
             </menu>

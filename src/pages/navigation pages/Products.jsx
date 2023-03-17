@@ -62,7 +62,7 @@ export default function Products() {
           <h2 className='bg-blue-300 p-2 my-2'> Non-Alcohol </h2>
          <section className='overflow-hidden justify-start gap-5  flex flex-wrap topbooks'>
           <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
@@ -75,7 +75,7 @@ export default function Products() {
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -88,7 +88,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -101,7 +101,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -114,7 +114,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -127,7 +127,7 @@ export default function Products() {
               </div>
         </div>
        <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -140,7 +140,7 @@ export default function Products() {
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
@@ -153,7 +153,7 @@ export default function Products() {
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -166,7 +166,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -179,7 +179,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -192,7 +192,7 @@ export default function Products() {
               </div>
         </div>
        <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -210,7 +210,7 @@ export default function Products() {
           <h2 className='bg-red-600 p-2 my-2'> Alcohol </h2>
           <section className='overflow-hidden justify-start gap-5  flex flex-wrap topbooks'>
           <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
@@ -223,7 +223,7 @@ export default function Products() {
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -236,7 +236,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -249,7 +249,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -262,7 +262,7 @@ export default function Products() {
               </div>
         </div>
        <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -275,7 +275,7 @@ export default function Products() {
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine3} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-2 text-black'>Fruit wine </h3>
@@ -288,7 +288,7 @@ export default function Products() {
               </div>
         </div>
         <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine2} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -301,7 +301,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine5} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -314,7 +314,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -327,7 +327,7 @@ export default function Products() {
               </div>
         </div>
          <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine7} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>
@@ -340,7 +340,7 @@ export default function Products() {
               </div>
         </div>
        <div className='flex flex-1 w-max flex-row p-2'>
-              <div className='box flex flex-col    justify-between bg-gray-200 p-2 rounded shadow-md' >
+              <div className='box flex flex-col    justify-between bg-white p-2 rounded shadow-md' >
                 <picture ><img className='' src={wine10} alt="" /></picture>
                 <div className='content'>
                   <h3 className='text-black'>Fruit wine </h3>

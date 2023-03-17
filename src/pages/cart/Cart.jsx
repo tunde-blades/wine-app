@@ -39,7 +39,7 @@ export default function Cart() {
             </div>
           </div>
          </section>
-            <button onClick={displayOrder} className='flex-1 border p-2 justify-center bg-orange-800 text-white cursor-pointer rounded-md'>Check out</button>
+            <button onClick={displayOrder} className='flex-1 border p-2 justify-center bg-orange-600 text-white cursor-pointer rounded-md'>Check out</button>
         </section>
         <Footer/>
     </div>

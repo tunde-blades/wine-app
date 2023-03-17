@@ -21,7 +21,7 @@ export default function Description() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima excepturi tempore veniam assumenda ullam earum nam iusto, eum, quod, sint consequatur est laborum ipsum labore beatae fugiat alias ipsam asperiores.
                     </small>
                 </div>
-                <button className='bg-orange-600 p-2 text-white'> Add to Cart</button>
+                <button className='rounded-md bg-orange-600 p-2 text-white'> Add to Cart</button>
             </section>
         </section>
     </div>

@@ -17,14 +17,16 @@ export default function Checkout() {
                     </div>
                     <p className='mb-8 mt-4 border-t flex justify-between'> <span>Total:</span> <span>$300.00</span> </p>
                    <form action="" className='flex flex-col gap-2 mb-4'>
-                        <input className=' pl-2 border rounded-sm' type="text" placeholder='Enter address'/>
+                    <h1>Confirm order</h1>
+                        <input className=' pl-2 border rounded-sm' type="text" placeholder='items'/>
+                        <input className=' pl-2 border rounded-sm' type="text" placeholder='14, Bode thomas road, Lagos.'/>
                         <input className=' pl-2 border rounded-sm' type="tel" name="" id="" placeholder='+234 902 405 ****' />
                    </form>
                     <small className='max-w-xs'>
                         We are about to send your order to a customer care on whatsapp for a faster delivery
                     </small>
                 </div>
-                <button className='bg-orange-600 p-2 text-white'> Send Order</button>
+                <button className='rounded-md bg-orange-600 p-2 text-white'> Send Order</button>
             </section>
         </section>
     </div>
