@@ -1,7 +1,18 @@
 import React, {useEffect, useState} from 'react'
+import { Swiper, SwiperSlide} from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
 // import { Search} from '@mui/icons-material';
 
 import Header from '../../layouts/header/Header'
+import slider1 from '../../assets/images/Slider1.png'
+
 import winevid from '../../assets/images/wine (1).mp4'
 import wine1 from '../../assets/images/wine (1).jpeg'
 import wine2 from '../../assets/images/wine (2).jpeg'
@@ -34,12 +45,10 @@ import wine28 from '../../assets/images/wine (28).jpeg'
 import wine29 from '../../assets/images/wine (29).jpeg'
 import wine30 from '../../assets/images/wine (30).jpeg'
 import wine31 from '../../assets/images/wine (31).jpeg'
-
-
 import winebg from '../../assets/images/winebg (1).jpeg'
-import {Carousel} from 'react-responsive-carousel'       
 import Footer from '../../layouts/footer/Footer'
 import Description from '../../components/modals/Description'
+
 import { Star, StarBorderOutlined, Cancel } from '@mui/icons-material'
 
 export default function LandingPage() {
@@ -57,26 +66,24 @@ export default function LandingPage() {
       {openDesc && <div onClick={displayDesc} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
                 <Cancel/>
             </div>}
-      {/* <Carousel>
-                <div>
-                    <img src={wine1} />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src={wine2} />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src={wine3} />
-                    <p className="legend">Legend 3</p>
-                </div>
-                <div>
-                    <img src={wine4} />
-                    <p className="legend">Legend 4</p>
-                </div>
-            </Carousel> */}
-
-      <h1 className='font-bold p-3 space'>Recently Ordered</h1>
+            <section className='space flex justify-center align-center '>
+              <Swiper
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={10}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
+                <SwiperSlide> <img src={slider1} alt="" /> </SwiperSlide>
+                <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
+                <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
+                <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
+                </Swiper>
+            </section>
+      <h1 className='font-bold p-3 space'>Top selling</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
           <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col   justify-between bg-white p-2 rounded shadow-md' >
