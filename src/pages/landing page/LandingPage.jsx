@@ -83,7 +83,7 @@ export default function LandingPage() {
                 <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
                 </Swiper>
             </section>
-      <h1 className='font-bold p-3 space'>Top selling</h1>
+      <h1 className='font-bold p-3 space'>Top selling...</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
           <div className='flex flex-1 w-max flex-row p-2'>
               <div className='box flex flex-col   justify-between bg-white p-2 rounded shadow-md' >
