@@ -66,8 +66,8 @@ export default function LandingPage() {
       {openDesc && <div onClick={displayDesc} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
                 <Cancel/>
             </div>}
-            <section className='space flex justify-center align-center '>
-              <Swiper
+            <section className='space'>
+              <Swiper className='mb-10 relative left-0 right-0'
               modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={10}
                 slidesPerView={1}
