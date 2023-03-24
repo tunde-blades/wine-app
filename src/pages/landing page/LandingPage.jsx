@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react'
 import { Swiper, SwiperSlide} from 'swiper/react/swiper-react.js';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/swiper.scss'; // core Swiper
+import 'swiper/modules/navigation/navigation.scss';
+import 'swiper/modules/pagination/pagination.scss'
+import 'swiper/modules/pagination/scrollbar.scss'
 
 
 // import { Search} from '@mui/icons-material';
