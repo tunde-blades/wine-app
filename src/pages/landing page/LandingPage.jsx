@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import { Swiper, SwiperSlide} from 'swiper/react/swiper-react.js'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import 'swiper/swiper.min.css'
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
-import 'swiper/modules/navigation/navigation.scss';
-import 'swiper/modules/pagination/pagination.scss'
-import 'swiper/modules/pagination/scrollbar.scss'
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+// import { Swiper, SwiperSlide} from 'swiper/react'
+
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 
 // import { Search} from '@mui/icons-material';
@@ -14,7 +13,7 @@ import 'swiper/modules/pagination/scrollbar.scss'
 import Header from '../../layouts/header/Header'
 import slider1 from '../../assets/images/Slider1.png'
 
-import winevid from '../../assets/images/wine (1).mp4'
+import winevid from '../../assets/images/wine (2).mp4'
 import wine1 from '../../assets/images/wine (1).jpeg'
 import wine2 from '../../assets/images/wine (2).jpeg'
 import wine3 from '../../assets/images/wine (3).jpeg'
@@ -67,7 +66,7 @@ export default function LandingPage() {
       {openDesc && <div onClick={displayDesc} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
                 <Cancel/>
             </div>}
-            <section className='space'>
+            {/* <section className='space'>
               <Swiper className='mb-10 relative left-0 right-0'
               modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={10}
@@ -83,7 +82,7 @@ export default function LandingPage() {
                 <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
                 <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
                 </Swiper>
-            </section>
+            </section> */}
       <h1 className='font-bold p-3 space'>Top selling...</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
           <div className='flex flex-1 w-max flex-row p-2'>
@@ -483,6 +482,10 @@ export default function LandingPage() {
       </section> 
        </section>
 
+
+    <section>
+      <video src={winevid} autoplay loop mute poster={slider1}> </video>
+    </section>
 
       <section className='my-10'>
          <div className='flex justify-between px-3'>
