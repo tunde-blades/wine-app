@@ -322,6 +322,9 @@ export default function LandingPage() {
       </section> 
     </section>
 
+       <section>
+      <video src={winevid} autoplay loop mute poster={slider1}> </video>
+    </section>
 
       <section className='my-10'>
          <div className='flex justify-between px-3'>
@@ -481,11 +484,6 @@ export default function LandingPage() {
         </div>
       </section> 
        </section>
-
-
-    <section>
-      <video src={winevid} autoplay loop mute poster={slider1}> </video>
-    </section>
 
       <section className='my-10'>
          <div className='flex justify-between px-3'>
