@@ -12,6 +12,10 @@ import React, {useEffect, useState} from 'react'
 
 import Header from '../../layouts/header/Header'
 import slider1 from '../../assets/images/Slider1.png'
+import slider2 from '../../assets/images/slider2.jpg'
+import slider3 from '../../assets/images/slider3.jpg'
+import slider4 from '../../assets/images/slider4.jpg'
+import poster from '../../assets/images/poster.jpg'
 
 import winevid from '../../assets/images/wine (2).mp4'
 import wine1 from '../../assets/images/wine (1).jpeg'
@@ -323,7 +327,7 @@ export default function LandingPage() {
     </section>
 
        <section>
-      <video src={winevid} autoplay loop mute poster={slider1}> </video>
+      <video src={winevid} autoplay loop mute poster={poster}> </video>
     </section>
 
       <section className='my-10'>
