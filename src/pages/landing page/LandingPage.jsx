@@ -324,9 +324,9 @@ export default function LandingPage() {
               </div>
         </div>
       </section> 
-    </section>``
+    </section>
 
-      <video src={winevid}  controls autoPlay loop poster={slider1}></video>
+      <video src={winevid}  poster={slider1} muted autoPlay loop></video>
 
 
       <section className='my-10'>
