@@ -1,22 +1,11 @@
 import React, {useEffect, useState} from 'react'
-// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-// import { Swiper, SwiperSlide} from 'swiper/react'
-
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
+import ReactSlidy from 'react-slidy'
+import 'react-slidy/lib/styles.css'
 
 
-// import { Search} from '@mui/icons-material';
-
+//sales images
 import Header from '../../layouts/header/Header'
-import slider1 from '../../assets/images/Slider1.png'
-import slider2 from '../../assets/images/slider2.jpg'
-import slider3 from '../../assets/images/slider3.jpg'
-import slider4 from '../../assets/images/slider4.jpg'
 import poster from '../../assets/images/poster.jpg'
-
 import winevid from '../../assets/images/wine (2).mp4'
 import wine1 from '../../assets/images/wine (1).jpeg'
 import wine2 from '../../assets/images/wine (2).jpeg'
@@ -53,7 +42,27 @@ import winebg from '../../assets/images/winebg (1).jpeg'
 import Footer from '../../layouts/footer/Footer'
 import Description from '../../components/modals/Description'
 
+
+//icons
 import { Star, StarBorderOutlined, Cancel } from '@mui/icons-material'
+
+
+//slider images
+import slider1 from '../../assets/images/Slider1.png'
+import slider2 from '../../assets/images/slider2.jpg'
+import slider3 from '../../assets/images/slider3.jpg'
+import slider4 from '../../assets/images/slider4.jpg'
+const SLIDES = [slider1, slider2, slider3, slider4]
+
+//slider css
+const createStyles = isActive => ({
+  background: 'transparent',
+  border: 0,
+  color: isActive ? '#333' : '#ccc',
+  cursor: 'pointer',
+  fontSize: '32px'
+})
+
 
 export default function LandingPage() {
 
@@ -63,6 +72,14 @@ export default function LandingPage() {
          setopendesc(!openDesc)
     }
 
+
+  const [actualSlide, setActualSlide] = useState(0)
+
+  const updateSlide = ({currentSlide}) => {
+    setActualSlide(currentSlide)
+  }
+
+
   return (
     <div className='bg-white'>
       <Header/>
@@ -70,23 +87,26 @@ export default function LandingPage() {
       {openDesc && <div onClick={displayDesc} className='z-50   fixed top-10 right-10 text-gray-700 cursor-pointer'>
                 <Cancel/>
             </div>}
-            {/* <section className='space'>
-              <Swiper className='mb-10 relative left-0 right-0'
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={10}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+            <section className='mt-40'>
+      <ReactSlidy doAfterSlide={updateSlide} slide={actualSlide}>
+        {SLIDES.map(src => (
+            <img alt="" key={src} src={src} />
+          ))}
+      </ReactSlidy>
+        <div className="Dots flex justify-center">
+          {SLIDES.map((_, index) => {
+            return (
+              <button
+                key={index}
+                style={createStyles(index === actualSlide)}
+                onClick={() => updateSlide({currentSlide: index})}
               >
-                <SwiperSlide> <img src={slider1} alt="" /> </SwiperSlide>
-                <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={slider1} alt="" /></SwiperSlide>
-                </Swiper>
-            </section> */}
+                &bull;
+              </button>
+            )
+          })}
+      </div>
+    </section>
       <h1 className='font-bold p-3 space'>Top selling...</h1>
       <section className='space overflow-hidden gap-2  flex flex-wrap'>
           <div className='flex flex-1 w-max flex-row p-2'>
